@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>顾圣杰 · Shengjie Gu | Deep Learning Researcher</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2306B6D4'/%3E%3Cstop offset='1' stop-color='%23A855F7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='7' fill='url(%23g)'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='15' font-weight='bold' fill='white' text-anchor='middle'%3E顾%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#/about" class="brand">
+      <div class="brand-mark">顾</div>
+      <div class="brand-name"><span class="n">顾圣杰</span><span class="s">Shengjie Gu · @南师大</span></div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">≡</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#/about" data-nav="about">About</a>
+      <a href="#/research" data-nav="research">Research</a>
+      <a href="#/projects" data-nav="projects">Projects</a>
+      <a href="#/services" data-nav="services">Services</a>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- ============ ABOUT ============ -->
+  <section class="view" id="view-about">
+    <div class="hero reveal">
+      <div class="avatar" id="hero-avatar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
+          <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
+          <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/>
+          <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/>
+          <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/>
+          <path d="M3.477 10.896a4 4 0 0 1 .585-.396"/>
+          <path d="M19.938 10.5a4 4 0 0 1 .585.396"/>
+          <path d="M6 18a4 4 0 0 1-1.967-.516"/>
+          <path d="M19.967 17.484A4 4 0 0 1 18 18"/>
+        </svg>
+      </div>
+      <div>
+        <div class="eyebrow" id="hero-eyebrow"></div>
+        <h1 id="hero-h1"></h1>
+        <p class="lede" id="hero-lede"></p>
+        <div class="cta-row" id="cta-row"></div>
+      </div>
+    </div>
+
+    <div class="stats-row reveal" id="stats-row" style="animation-delay:.08s"></div>
+
+    <div class="bio reveal" id="bio" style="animation-delay:.14s"></div>
+
+    <div class="meta-strip reveal" id="meta-strip" style="animation-delay:.2s"></div>
+
+    <h2 class="section reveal" style="animation-delay:.26s">教育经历</h2>
+    <div class="timeline reveal" id="timeline" style="animation-delay:.3s"></div>
+
+    <h2 class="section reveal" style="animation-delay:.38s">技术栈</h2>
+    <div class="tags reveal" id="tech" style="animation-delay:.42s"></div>
+  </section>
+
+  <!-- ============ RESEARCH ============ -->
+  <section class="view" id="view-research">
+    <h2 class="section reveal" style="margin-top:24px">研究方向</h2>
+    <p class="page-intro reveal" style="animation-delay:.05s">我的研究兴趣围绕深度学习算法展开，横跨视觉、文本与大模型可靠性三条相互关联的主线。</p>
+    <div class="card-grid" id="grid-research"></div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="view" id="view-projects">
+    <h2 class="section reveal" style="margin-top:24px">精选项目</h2>
+    <p class="page-intro reveal" style="animation-delay:.05s">项目持续更新中，完整代码托管在 GitHub。</p>
+    <div class="card-grid" id="grid-projects"></div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="view" id="view-services">
+    <h2 class="section reveal" style="margin-top:24px">提供的服务</h2>
+    <p class="page-intro reveal" style="animation-delay:.05s">除个人研究外，我也开放以下合作与技术服务，欢迎邮件沟通。</p>
+    <div class="card-grid" id="grid-services"></div>
+  </section>
+
+  <!-- ============ DETAIL ============ -->
+  <section class="view" id="view-detail">
+    <div id="detail-root"></div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div>© <span id="year"></span> 顾圣杰 · Shengjie Gu · Nanjing Normal University</div>
+    <div class="foot-links">
+      <a id="foot-email" href="#">email</a>
+      <a id="foot-github" href="#" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="contact-modal">
+  <div class="modal-card">
+    <button class="modal-close" id="modal-close" aria-label="关闭">×</button>
+    <div class="modal-title">联系我</div>
+    <div class="modal-sub">欢迎通过以下方式与我联系</div>
+    <div class="modal-item">
+      <span class="k">EMAIL</span>
+      <span class="v" id="modal-email"></span>
+      <button class="copy-btn" id="copy-email">复制</button>
+    </div>
+    <div class="modal-item">
+      <span class="k">TEL</span>
+      <span class="v" id="modal-tel"></span>
+      <button class="copy-btn" id="copy-tel">复制</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
